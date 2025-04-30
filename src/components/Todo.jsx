@@ -3,7 +3,7 @@ import calender from '../assets/calender.png'
 import PlusSignBtn from '../assets/PlusSignBtn.png'
 import Todoitems from './Todoitems'
 
-const ToDo = () => {
+const Todo = () => {
 
   const [todoList, setTodoList] = useState(localStorage.getItem("todos")?JSON.parse(localStorage.getItem("todos")) : []);
 
@@ -78,4 +78,4 @@ useEffect(() => {
   )
 }
 
-export default ToDo
+export default Todo
